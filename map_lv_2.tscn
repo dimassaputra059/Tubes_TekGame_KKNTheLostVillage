@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dh02uqk2jahnn" path="res://player/player.tscn" id="1_7ioqw"]
 [ext_resource type="Texture2D" uid="uid://b7rbj8b484ya5" path="res://Map/Tileset/TilesetVillageAbandoned.png" id="2_kr2q8"]
-[ext_resource type="Texture2D" uid="uid://caogmxeeksn6a" path="res://Map/Tileset/TilesetFloor.png" id="2_qxwbt"]
-[ext_resource type="Texture2D" uid="uid://dvaejrppfm5nd" path="res://Map/Tileset/TilesetNature.png" id="4_43syx"]
+[ext_resource type="Texture2D" uid="uid://cgmx8v2hwydxp" path="res://Map/Tileset/TilesetFloor.png" id="2_qxwbt"]
+[ext_resource type="Texture2D" uid="uid://bw2pljapbvhn6" path="res://Map/Tileset/TilesetNature.png" id="4_43syx"]
 [ext_resource type="Texture2D" uid="uid://d1llf75epbqo4" path="res://Map/Tileset/SpriteSheet16x16.png" id="5_dbp8k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e35e8"]
@@ -1262,6 +1262,7 @@ tile_map_data = PackedByteArray("AAAAAAAAAwAMAAwAAAABAAAAAwALAAwAAAACAAAAAwANAAw
 tile_set = SubResource("TileSet_q1adu")
 
 [node name="Player" parent="." instance=ExtResource("1_7ioqw")]
+y_sort_enabled = true
 position = Vector2(126, 262)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
