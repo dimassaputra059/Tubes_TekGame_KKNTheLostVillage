@@ -1,8 +1,5 @@
 [gd_scene load_steps=15 format=4 uid="uid://b084wfpm6xabi"]
 
-<<<<<<< HEAD
-[ext_resource type="PackedScene" uid="uid://dh02uqk2jahnn" path="res://Player/player.tscn" id="1_7ioqw"]
-=======
 [ext_resource type="PackedScene" uid="uid://dh02uqk2jahnn" path="res://player/player.tscn" id="1_7ioqw"]
 [ext_resource type="Texture2D" uid="uid://b7rbj8b484ya5" path="res://Map/Tileset/TilesetVillageAbandoned.png" id="2_kr2q8"]
 [ext_resource type="Texture2D" uid="uid://cgmx8v2hwydxp" path="res://Map/Tileset/TilesetFloor.png" id="2_qxwbt"]
@@ -1256,7 +1253,6 @@ texture = ExtResource("5_dbp8k")
 [sub_resource type="TileSet" id="TileSet_432oi"]
 sources/0 = SubResource("TileSetAtlasSource_7r6om")
 sources/1 = SubResource("TileSetAtlasSource_13qvq")
->>>>>>> ee2fc6e70d6464211d3b5c980b5a39724670c453
 
 [node name="Map_Lv_2" type="Node2D"]
 y_sort_enabled = true
