@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://cqeu8v2qf4fqe"]
+
+[ext_resource type="Script" path="res://npc/npc_4.gd" id="1_afoag"]
+[ext_resource type="Texture2D" uid="uid://cj1h0y8qdmxby" path="res://asset/anak_kecil.png" id="2_laa5r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_in3ob"]
+atlas = ExtResource("2_laa5r")
+region = Rect2(0, 0, 78, 127)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xuh7n"]
+atlas = ExtResource("2_laa5r")
+region = Rect2(117, 0, 78, 127)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vumk8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_in3ob")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xuh7n")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k041d"]
+size = Vector2(77, 124)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_32vs8"]
+radius = 116.004
+
+[node name="Npc4" type="CharacterBody2D"]
+script = ExtResource("1_afoag")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_vumk8")
+animation = &"idle"
+frame_progress = 0.276277
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_k041d")
+
+[node name="chatDetection" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chatDetection"]
+shape = SubResource("CircleShape2D_32vs8")
+
+[connection signal="body_entered" from="chatDetection" to="." method="_on_chat_detection_body_entered"]
+[connection signal="body_exited" from="chatDetection" to="." method="_on_chat_detection_body_exited"]

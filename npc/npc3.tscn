@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://b38vl3s8q24pr"]
+
+[ext_resource type="Script" path="res://npc/npc_3.gd" id="1_057lv"]
+[ext_resource type="Texture2D" uid="uid://bvnpt4ynde18o" path="res://asset/pria_misterius.png" id="2_n2nj3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mihy1"]
+atlas = ExtResource("2_n2nj3")
+region = Rect2(0, 0, 84, 134)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjcrc"]
+atlas = ExtResource("2_n2nj3")
+region = Rect2(143, 0, 84, 134)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_orbpc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mihy1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kjcrc")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bxuof"]
+size = Vector2(82, 132)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cqk37"]
+radius = 170.003
+
+[node name="Npc3" type="CharacterBody2D"]
+script = ExtResource("1_057lv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_orbpc")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_bxuof")
+
+[node name="chatDetection" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chatDetection"]
+shape = SubResource("CircleShape2D_cqk37")
+
+[connection signal="body_entered" from="chatDetection" to="." method="_on_chat_detection_body_entered"]
+[connection signal="body_exited" from="chatDetection" to="." method="_on_chat_detection_body_exited"]
