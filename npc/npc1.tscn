@@ -45,7 +45,17 @@ shape = SubResource("RectangleShape2D_sdt5u")
 [node name="chatDetection" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="chatDetection"]
+visible = false
 shape = SubResource("CircleShape2D_c3h4o")
+
+[node name="Label" type="Label" parent="chatDetection"]
+offset_left = -130.0
+offset_top = -125.0
+offset_right = 132.0
+offset_bottom = -70.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "[E] to Interect"
 
 [connection signal="body_entered" from="chatDetection" to="." method="_on_chat_detection_body_entered"]
 [connection signal="body_exited" from="chatDetection" to="." method="_on_chat_detection_body_exited"]

@@ -26,7 +26,8 @@ directories/dch_directory={
 "npc2": "res://dialogic/characters/npc2.dch",
 "npc3": "res://dialogic/characters/npc3.dch",
 "npc4": "res://dialogic/characters/npc4.dch",
-"player": "res://dialogic/characters/player.dch"
+"player": "res://dialogic/characters/player.dch",
+"wanita_misterius": "res://dialogic/characters/wanita_misterius.dch"
 }
 directories/dtl_directory={
 "dialog_wanita_misterius": "res://dialogic/timelines/dialog_wanita_misterius.dtl",

@@ -1,15 +1,12 @@
 extends CharacterBody2D
 
-
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-
 var player_is_area = false
 var quest_started = false 
 
 func _ready():
 	$AnimatedSprite2D.play("idle")
 	Dialogic.signal_event.connect(DialogicSignal)
+	$chatDetection/Label.visible = false
 
 func _process(delta):
 	if player_is_area:
@@ -30,8 +27,10 @@ func DialogicSignal(arg: String):
 func _on_chat_detection_body_entered(body: Node2D) -> void:
 	if body.has_method("player"):
 		player_is_area = true
+		$chatDetection/Label.visible = true
 
 
 func _on_chat_detection_body_exited(body: Node2D) -> void:
 	if body.has_method("player"):
 		player_is_area = false
+		$chatDetection/Label.visible = false
