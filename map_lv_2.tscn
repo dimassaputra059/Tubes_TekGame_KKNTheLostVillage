@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cqeu8v2qf4fqe" path="res://npc/npc4.tscn" id="9_ee8w3"]
 [ext_resource type="PackedScene" uid="uid://b0lmqflsf2uv7" path="res://npc/wanita_misterius.tscn" id="10_wd7ks"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r0634"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mx6vb"]
 texture = ExtResource("1_136in")
 0:0/0 = 0
 1:0/0 = 0
@@ -107,7 +107,7 @@ texture = ExtResource("1_136in")
 7:14/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_q1adu"]
-sources/1 = SubResource("TileSetAtlasSource_r0634")
+sources/1 = SubResource("TileSetAtlasSource_mx6vb")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xai75"]
 texture = ExtResource("1_136in")
