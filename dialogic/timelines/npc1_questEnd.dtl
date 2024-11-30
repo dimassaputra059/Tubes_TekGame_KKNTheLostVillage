@@ -1,0 +1,16 @@
+if {quest_npc1} == false:
+	npc1: Apakah sudah menemukan ketiga ranting kayu?
+	- Sudah
+		set {rantingKayu} = 3
+	- Belum
+		set {rantingKayu} = 0
+	if {rantingKayu} == 3:
+		player: Aku sudah menemukan 3 ranting kayu seperti yang kakek minta.
+		npc1: Oh, kau luar biasa! Ini lebih dari cukup. Aku sangat berterima kasih padamu, anak muda. Sebagai tanda terima kasih, terimalah ini.
+		player: Terima kasih, senang bisa membantumu
+		npc1: Hati-hati di perjalananmu, anak muda. Semoga keberuntungan selalu menyertaimu.
+		set {quest_npc1} = true
+	else:
+		npc1: Kembali lagi jika sudah mendapatkan ketiga ranting kayu
+else:
+	npc1: Terima kasih sudah membantu anak muda

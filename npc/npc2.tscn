@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://7638wlo7xd36"]
+
+[ext_resource type="Script" path="res://npc/npc_2.gd" id="1_y6p3g"]
+[ext_resource type="Texture2D" uid="uid://b37b4nqugvput" path="res://asset/wanita_tua.png" id="2_u08ns"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pt1j2"]
+atlas = ExtResource("2_u08ns")
+region = Rect2(5, 1, 88, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0slog"]
+atlas = ExtResource("2_u08ns")
+region = Rect2(146, 1, 88, 140)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pu2x8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pt1j2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0slog")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wm300"]
+size = Vector2(83, 126)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5i3iy"]
+radius = 147.218
+
+[node name="Npc2" type="CharacterBody2D"]
+script = ExtResource("1_y6p3g")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_pu2x8")
+animation = &"idle"
+frame_progress = 0.321501
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 2)
+shape = SubResource("RectangleShape2D_wm300")
+
+[node name="chatDetection" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chatDetection"]
+shape = SubResource("CircleShape2D_5i3iy")
+
+[connection signal="body_entered" from="chatDetection" to="." method="_on_chat_detection_body_entered"]
+[connection signal="body_exited" from="chatDetection" to="." method="_on_chat_detection_body_exited"]
