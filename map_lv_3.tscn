@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://time/time_system.gd" id="4_fke80"]
 [ext_resource type="Texture2D" uid="uid://dufoh1tco8i42" path="res://Map/Tileset/TilesetElement.png" id="5_6wk60"]
 [ext_resource type="Script" path="res://time/date_time.gd" id="5_uhu8f"]
-[ext_resource type="PackedScene" uid="uid://21ueyui1gamg" path="res://time_ui.tscn" id="6_nu6m0"]
+[ext_resource type="PackedScene" path="res://time_ui.tscn" id="6_nu6m0"]
 
 [sub_resource type="Gradient" id="Gradient_jwu8k"]
 offsets = PackedFloat32Array(0, 0.655844, 1)

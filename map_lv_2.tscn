@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://b084wfpm6xabi"]
+[gd_scene load_steps=29 format=4 uid="uid://b084wfpm6xabi"]
 
 [ext_resource type="PackedScene" uid="uid://dh02uqk2jahnn" path="res://player/player.tscn" id="1_7ioqw"]
 [ext_resource type="Texture2D" uid="uid://db6a3fpna8jg4" path="res://Map/Tileset/Tileset.png" id="1_136in"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://b38vl3s8q24pr" path="res://npc/npc3.tscn" id="8_v2phe"]
 [ext_resource type="PackedScene" uid="uid://cqeu8v2qf4fqe" path="res://npc/npc4.tscn" id="9_ee8w3"]
 [ext_resource type="PackedScene" uid="uid://b0lmqflsf2uv7" path="res://npc/wanita_misterius.tscn" id="10_wd7ks"]
+[ext_resource type="PackedScene" uid="uid://dsygcpct1b1in" path="res://interect/PapanPengumumanDesa.tscn" id="12_k3olq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mx6vb"]
 texture = ExtResource("1_136in")
@@ -709,3 +710,7 @@ scale = Vector2(0.15, 0.15)
 [node name="WanitaMisterius" parent="." instance=ExtResource("10_wd7ks")]
 position = Vector2(1226, 482)
 scale = Vector2(0.15, 0.15)
+
+[node name="PapanPengumumanDesa" parent="." instance=ExtResource("12_k3olq")]
+position = Vector2(1768, 519)
+scale = Vector2(0.5, 0.5)

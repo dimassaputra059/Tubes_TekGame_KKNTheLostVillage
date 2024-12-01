@@ -35,7 +35,8 @@ directories/dtl_directory={
 "npc1_questStart": "res://dialogic/timelines/npc1_questStart.dtl",
 "npc2_dialog": "res://dialogic/timelines/npc2_dialog.dtl",
 "npc3_dialog": "res://dialogic/timelines/npc3_dialog.dtl",
-"npc4_dialog": "res://dialogic/timelines/npc4_dialog.dtl"
+"npc4_dialog": "res://dialogic/timelines/npc4_dialog.dtl",
+"papan_pengumuman_desa": "res://dialogic/timelines/papan_pengumuman_desa.dtl"
 }
 variables={
 "quest_npc1": false,
