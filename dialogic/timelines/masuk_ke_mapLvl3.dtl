@@ -1,0 +1,4 @@
+Hanya yang berani yang akan menemukan kebenaran. Apakah kamu berani melanjutkan perjalanan?
+- Lanjutkan
+	[signal arg="next_mapLvl3"]
+- Tunggu Dulu

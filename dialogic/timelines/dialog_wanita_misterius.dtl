@@ -4,3 +4,4 @@ wanita_misterius: Siapa kamu, orang asing? Kenapa kamu ada di desa ini?
 player: Saya Budiono bu, mahasiswa KKN di desa Alur Jambu. Saya tersesat di hutan ketika sedang berjalan-jalan. Desa ini... tampak aneh. Apa ibu tahu dimana desa Alur Jambu?
 wanita_misterius: Saya sendiri sebenarnya tidak tahu jalan ke desa Alur Jambu, tapi mungkin penduduk sini ada yang tahu, coba kamu tanya ke mereka saja
 player: Baik bu, terima kasih
+[signal arg="wanita_dialogEnd"]

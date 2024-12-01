@@ -10,3 +10,5 @@ player: Sebelah mana dek?
 npc4: Gak tau, aku belum pernah kesana soalnya, atok gk pernah ngajak aku keluar desa.
 player: Baik, terima kasih, Dik. Abang pergi cari atokmu dulu.
 player: (budiono pergi meninggalkan si anak kecil sembari keheranan)
+[signal arg="kakek_di_danau"]
+[signal arg="npc4_dialogEnd"]

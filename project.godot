@@ -31,17 +31,45 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "dialog_wanita_misterius": "res://dialogic/timelines/dialog_wanita_misterius.dtl",
-"npc1_questEnd": "res://dialogic/timelines/npc1_questEnd.dtl",
+"masuk_ke_mapLvl3": "res://dialogic/timelines/masuk_ke_mapLvl3.dtl",
+"npc1_questComplete": "res://dialogic/timelines/npc1_questComplete.dtl",
+"npc1_questIncomplete": "res://dialogic/timelines/npc1_questIncomplete.dtl",
 "npc1_questStart": "res://dialogic/timelines/npc1_questStart.dtl",
 "npc2_dialog": "res://dialogic/timelines/npc2_dialog.dtl",
+"npc2_dialogDone": "res://dialogic/timelines/npc2_dialogDone.dtl",
 "npc3_dialog": "res://dialogic/timelines/npc3_dialog.dtl",
 "npc4_dialog": "res://dialogic/timelines/npc4_dialog.dtl",
-"papan_pengumuman_desa": "res://dialogic/timelines/papan_pengumuman_desa.dtl"
+"papan_pengumuman_desa": "res://dialogic/timelines/papan_pengumuman_desa.dtl",
+"silent": "res://dialogic/timelines/silent.dtl",
+"timelines/npc1_questEnd": "res://dialogic/timelines/npc1_questEnd.dtl"
 }
 variables={
 "quest_npc1": false,
 "rantingKayu": 0
 }
+glossary/default_case_sensitive=true
+layout/style_list=[]
+layout/default_style="Default"
+extensions_folder="res://addons/dialogic_additions"
+text/letter_speed=0.01
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/advance_delay=0.1
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+audio/max_channels=4.0
+animations/join_default_length=0.5
+animations/join_default_wait=true
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/cross_fade_default_length=0.5
+choices/autofocus_first=true
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+text/autopauses={}
 
 [display]
 

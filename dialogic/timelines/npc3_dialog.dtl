@@ -2,3 +2,4 @@ player: Permisi pak, apakah tahu jalan menuju desa Alur Jambu
 npc3: Desa Alur Jambu..?. Waah baru dengar kalo ada desa dengan nama Alur Jambu
 player: Baiklah pak kalau memang gk tahu, saya pamit dulu
 npc3: Iya hati-hati, dan juga maaf gk bisa bantu
+[signal arg="npc3_dialogEnd"]

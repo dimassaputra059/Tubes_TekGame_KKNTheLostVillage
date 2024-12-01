@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://b084wfpm6xabi"]
+[gd_scene load_steps=31 format=4 uid="uid://b084wfpm6xabi"]
 
 [ext_resource type="PackedScene" uid="uid://dh02uqk2jahnn" path="res://player/player.tscn" id="1_7ioqw"]
 [ext_resource type="Texture2D" uid="uid://db6a3fpna8jg4" path="res://Map/Tileset/Tileset.png" id="1_136in"]
@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://cqeu8v2qf4fqe" path="res://npc/npc4.tscn" id="9_ee8w3"]
 [ext_resource type="PackedScene" uid="uid://b0lmqflsf2uv7" path="res://npc/wanita_misterius.tscn" id="10_wd7ks"]
 [ext_resource type="PackedScene" uid="uid://dsygcpct1b1in" path="res://interect/PapanPengumumanDesa.tscn" id="12_k3olq"]
+[ext_resource type="PackedScene" uid="uid://cwq4oeedompoy" path="res://interect/QuestJamur.tscn" id="13_n4rl0"]
+[ext_resource type="PackedScene" uid="uid://c5u73nkel0d6m" path="res://interect/MenujuMapLvl3.tscn" id="14_cvmqr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mx6vb"]
 texture = ExtResource("1_136in")
@@ -665,6 +667,7 @@ tile_set = SubResource("TileSet_rl727")
 [node name="Player" parent="." instance=ExtResource("1_7ioqw")]
 y_sort_enabled = true
 position = Vector2(269, 256)
+speed = 100
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(2.5, 2.5)
@@ -692,25 +695,31 @@ tile_map_data = PackedByteArray("AAAaACkAAQAAAAoAAAAbACkAAQABAAoAAAAcACkAAQABAAo
 tile_set = SubResource("TileSet_7gbki")
 
 [node name="Npc1" parent="." instance=ExtResource("6_0hf5e")]
-position = Vector2(719, 254)
+position = Vector2(995, 391)
 scale = Vector2(0.15, 0.15)
 
 [node name="Npc2" parent="." instance=ExtResource("7_t8uoe")]
-position = Vector2(1210, 319)
+position = Vector2(599, 644)
 scale = Vector2(0.15, 0.15)
 
 [node name="Npc3" parent="." instance=ExtResource("8_v2phe")]
-position = Vector2(1440, 287)
+position = Vector2(1523, 447)
 scale = Vector2(0.15, 0.15)
 
 [node name="Npc4" parent="." instance=ExtResource("9_ee8w3")]
-position = Vector2(1520, 448)
+position = Vector2(1092, 366)
 scale = Vector2(0.15, 0.15)
 
 [node name="WanitaMisterius" parent="." instance=ExtResource("10_wd7ks")]
-position = Vector2(1226, 482)
+position = Vector2(712, 252)
 scale = Vector2(0.15, 0.15)
 
 [node name="PapanPengumumanDesa" parent="." instance=ExtResource("12_k3olq")]
 position = Vector2(1768, 519)
 scale = Vector2(0.5, 0.5)
+
+[node name="QuestJamur" parent="." instance=ExtResource("13_n4rl0")]
+position = Vector2(351, 134)
+
+[node name="MenujuMapLvl3" parent="." instance=ExtResource("14_cvmqr")]
+position = Vector2(2245, 398)

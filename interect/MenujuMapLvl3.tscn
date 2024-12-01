@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5u73nkel0d6m"]
+
+[ext_resource type="Script" path="res://interect/menuju_map_lvl_3.gd" id="1_ydisw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c2301"]
+size = Vector2(120.75, 145.625)
+
+[node name="MenujuMapLvl3" type="Area2D"]
+script = ExtResource("1_ydisw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_c2301")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -83.0
+offset_top = -46.0
+offset_right = 31.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 15
+text = "[E] Melanjutkan
+    Perjalanan"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

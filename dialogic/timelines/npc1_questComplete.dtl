@@ -1,0 +1,10 @@
+player: Nek, ini jamurnya.
+npc1: Alhamdulillah, terima kasih banyak, Nak. Syukur kau selamat.
+player: Hutan tu memang agak menyeramkan, Nek. Tapi alhamdulillah, semuanya baik-baik saja.
+npc1: Bagus, bagus... Nenek akan masak jamur ini." “Oh ya, Nenek sudah ingat siapa penduduk sini yang pernah ke desamu. Beliau adalah datok Hassan
+player: Dimana rumah beliau nek?
+npc1: Rumahnya….. Saya lupa juga, maklum sudah ratusan tahun nenek tidak pergi kerumah beliau, coba kamu tanya penduduk yang lain, mungkin jika beruntung kamu bisa ketemu dengan cucunya atau beliau langsung.
+player: baik nek, terima kasih infonya.
+player: (Budiono meninggalkan si nenek dan mencari keberadaan datuk Hassan)
+player: Apa gak salah denger, nenek tadi bilang dah ratusan tahun?
+[signal arg="quest_end"]

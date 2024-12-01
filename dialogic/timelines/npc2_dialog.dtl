@@ -24,3 +24,4 @@ npc2: Ini atok ada lentera, lentera ini bisa membantu kamu untuk mencari jalan u
 player: Tidak tok, saya akan tetap mencoba untuk mencari jalan tersebut. Karena bagaimana pun, keluarga dan teman-teman saya pasti mengkhawatirkan saya. Jadi saya akan tetap berusaha keluar dari hutan ini.
 npc2: Baiklah jika itu sudah menjadi keputusanmu, terima kasih sudah mau mengobrol dengan atok, setelah bertahun-tahun atok tidak pernah lagi mengobrol dengan orang dari luar desa. Hari juga sudah mulai gelap, sebaiknya kamu segera pergi ke hutan sebelah timur.
 player: Baik tok, sekali lagi terima kasih atas bantuannya.
+[signal arg="npc2_dialogEnd"]
