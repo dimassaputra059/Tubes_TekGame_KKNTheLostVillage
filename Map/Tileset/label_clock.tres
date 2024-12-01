@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bqhb5uba6h7q5"]
+
+[ext_resource type="FontFile" uid="uid://dsnh5hqjxk5pi" path="res://Map/Tileset/Kenney Future Narrow.ttf" id="1_5tqum"]
+
+[resource]
+font = ExtResource("1_5tqum")
+font_size = 40
+font_color = Color(0.14902, 0.168627, 0.266667, 1)

@@ -5262,10 +5262,10 @@ tile_map_data = PackedByteArray("AAAGAAAAAQAFAAMAAAALAA8AAQAFAAQAAAALABAAAQAHAAM
 tile_set = SubResource("TileSet_33ikq")
 
 [node name="Player" parent="." instance=ExtResource("2_rjjot")]
-position = Vector2(226, 231)
+position = Vector2(320, 233)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(226, 239)
-zoom = Vector2(0.7, 0.7)
+position = Vector2(321, 238)
+zoom = Vector2(2.5, 2.5)
 process_callback = 0
 script = ExtResource("5_613fs")

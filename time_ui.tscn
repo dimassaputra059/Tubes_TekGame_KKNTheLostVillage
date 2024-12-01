@@ -1,0 +1,86 @@
+[gd_scene load_steps=4 format=3 uid="uid://21ueyui1gamg"]
+
+[ext_resource type="Script" path="res://time_ui.gd" id="1_3owx8"]
+[ext_resource type="Texture2D" uid="uid://bkf1sht1gmjb3" path="res://Map/Tileset/ui_9patchrect.png" id="1_v5o45"]
+[ext_resource type="LabelSettings" uid="uid://bqhb5uba6h7q5" path="res://Map/Tileset/label_clock.tres" id="2_il5ct"]
+
+[node name="Time_GUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 166.0
+offset_bottom = 47.0
+script = ExtResource("1_3owx8")
+
+[node name="Background2" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 198.0
+offset_bottom = 48.0
+texture = ExtResource("1_v5o45")
+region_rect = Rect2(47.7413, -0.533083, 48.5328, 16.8168)
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="Background" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 198.0
+offset_bottom = 48.0
+texture = ExtResource("1_v5o45")
+region_rect = Rect2(47.7413, -0.533083, 48.5328, 16.8168)
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="ClockControl" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 1.0
+offset_right = 198.0
+offset_bottom = 48.0
+
+[node name="hours" type="Label" parent="ClockControl"]
+layout_mode = 0
+offset_left = 3.0
+offset_right = 60.0
+offset_bottom = 45.0
+text = "06"
+label_settings = ExtResource("2_il5ct")
+horizontal_alignment = 2
+
+[node name="space" type="Label" parent="ClockControl"]
+layout_mode = 0
+offset_left = 51.0
+offset_right = 74.0
+offset_bottom = 45.0
+text = " :"
+label_settings = ExtResource("2_il5ct")
+horizontal_alignment = 1
+
+[node name="minutes" type="Label" parent="ClockControl"]
+layout_mode = 0
+offset_left = 74.0
+offset_right = 121.0
+offset_bottom = 45.0
+text = "01"
+label_settings = ExtResource("2_il5ct")
+horizontal_alignment = 2
+
+[node name="space2" type="Label" parent="ClockControl"]
+layout_mode = 0
+offset_left = 114.0
+offset_right = 137.0
+offset_bottom = 45.0
+text = " :"
+label_settings = ExtResource("2_il5ct")
+horizontal_alignment = 1
+
+[node name="seconds" type="Label" parent="ClockControl"]
+layout_mode = 0
+offset_left = 139.0
+offset_right = 196.0
+offset_bottom = 45.0
+text = "59"
+label_settings = ExtResource("2_il5ct")
+horizontal_alignment = 2
