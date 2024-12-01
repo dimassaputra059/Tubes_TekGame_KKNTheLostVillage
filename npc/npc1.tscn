@@ -1,24 +1,24 @@
 [gd_scene load_steps=8 format=3 uid="uid://bxbvugqpua60a"]
 
 [ext_resource type="Script" path="res://npc/npc_1.gd" id="1_aspq1"]
-[ext_resource type="Texture2D" uid="uid://d10mr0ppl4qea" path="res://asset/npc_grandfather.png" id="1_xq1yj"]
+[ext_resource type="Texture2D" uid="uid://b37b4nqugvput" path="res://asset/wanita_tua.png" id="2_62xwq"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_452tv"]
-atlas = ExtResource("1_xq1yj")
-region = Rect2(0, 0, 83, 130)
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkkab"]
+atlas = ExtResource("2_62xwq")
+region = Rect2(0, 0, 93, 141)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qcm1o"]
-atlas = ExtResource("1_xq1yj")
-region = Rect2(142, 0, 83, 130)
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlw7m"]
+atlas = ExtResource("2_62xwq")
+region = Rect2(141, 0, 93, 141)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nb6on"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_452tv")
+"texture": SubResource("AtlasTexture_kkkab")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qcm1o")
+"texture": SubResource("AtlasTexture_mlw7m")
 }],
 "loop": true,
 "name": &"idle",
@@ -37,6 +37,7 @@ script = ExtResource("1_aspq1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_nb6on")
 animation = &"idle"
+frame_progress = 0.138798
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3.5)

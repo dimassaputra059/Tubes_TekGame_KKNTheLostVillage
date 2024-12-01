@@ -9,6 +9,7 @@ var start_pos
 
 var is_roaming = true
 var chasing = false
+var attacking = false
 
 var player
 var player_in_area = false
@@ -26,9 +27,12 @@ func _ready():
 	var timer = Timer.new()
 	timer.wait_time = 2.0  # Setiap 2 detik akan terjadi pergantian state
 	timer.one_shot = false
-	timer.connect("timeout", Callable(self, "_on_timer_timeout"))
+	timer.timeout.connect(_on_timer_timeout)
 	add_child(timer)
 	timer.start()
+	
+	$DetectionArea.body_entered.connect(_on_player_touched)
+	$DetectionArea.body_exited.connect(_on_player_exited)
 
 func _process(delta):
 	if chasing and player_in_area:
@@ -92,3 +96,17 @@ func _on_detection_area_body_exited(body: Node2D) -> void:
 	if body.has_method("player"):
 		player_in_area = false
 		chasing = false
+
+func _on_player_touched(body: Node2D) -> void:
+	if body == player:
+		attacking = true  # Mulai mode serangan
+		$AnimatedSprite2D.play("attack")
+		$AnimatedSprite2D.animation_finished.connect(_on_attack_finished)
+
+func _on_player_exited(body: Node2D) -> void:
+	if body == player:
+		attacking = false
+
+func _on_attack_finished() -> void:
+	$AnimatedSprite2D.animation_finished.disconnect(_on_attack_finished)
+	attacking = false

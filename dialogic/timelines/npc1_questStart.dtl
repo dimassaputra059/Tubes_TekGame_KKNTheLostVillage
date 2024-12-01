@@ -1,8 +1,14 @@
-npc1: Oh, anak muda! Tunggu sebentar, bolehkah aku meminta sedikit bantuan darimu?
-player: Tentu, apa yang bisa saya bantu kakek?
-npc1: Begini... aku sedang membutuhkan beberapa ranting kayu untuk memperbaiki tongkatku yang mulai rapuh. Sayangnya, kakiku ini tak lagi sekuat dulu untuk mencarinya
-player: Aku bisa mencarikannya untukmu. Berapa banyak ranting kayu yang kakek butuhkan?
-npc1: Hanya tiga ranting kayu saja, yang kuat tapi tak terlalu besar. Kau bisa menemukannya di hutan kecil di sebelah barat sini.
-player: Baik, aku akan mencarikannya untuk kakek
-npc1: Terima kasih, anak muda! Aku akan menunggumu di sini. Hati-hati di perjalanan.
+player: Assalamualaikum, Nek. Apa nenek tau jalan ke desa Alur Jambu?
+npc1: Waalaikumsalam, Nak. Hmm Desa Alur Jambu…?
+player: Iya nek
+npc1: Gimana kamu bisa sampai kesini ? desa ini ada di tengah-tengah hutan dan jarak desa ini dengan desamu lumayan jauh.
+player: Saya tersesat nek pas lagi jalan-jalan ke hutan sekitar desa.
+npc1: Malang sekali nasibmu nak. Nenek ingat ada penduduk sini yang pernah sampai ke desa Alur Jambu, tapi nenek lupa namanya. Sembari nenek mengingat orang itu, nenek boleh minta tolong?
+player: Minta tolong apa nek?
+npc1: Makasih nak, mumpung ada kamu, nenek sekarang mau masak sayur jamur, tapi persediaan jamur di dapur habis, bisa kamu bantu cari jamurnya ?
+player: Jamur ? ciri-cirinya seperti apa nek jamurnya ? saya gak terlalu paham dengan jenis-jenis jamur yang bisa dimakan.
+npc1: Jamurnya warnanya merah dengan sedikit bintik-bintik putih. Tapi tolong cari jamur yang tumbuh didekat pohon besar di hutan sebelah barat.
+npc1: Usahakan juga ambil jamur yg berukuran kecil, karena jamur yang ukuran besar kurang enak saat dimasak
+npc1: Setelah kamu dapat jamurnya nanti nenek kasih tau nama orang yang pernah ke desamu setelah nenek selesai mengingatnya
+player: Baik nek, Budi akan mencari jamurnya
 [signal arg="start_quest"]
