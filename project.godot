@@ -32,8 +32,11 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "batas_lvl_2": "res://batas_lvl_2.dtl",
+"batu_nisan": "res://dialogic/timelines/batu_nisan.dtl",
+"danau": "res://dialogic/timelines/danau.dtl",
 "desa_alur_jambu": "res://dialogic/timelines/desa_alur_jambu.dtl",
 "dialog_wanita_misterius": "res://dialogic/timelines/dialog_wanita_misterius.dtl",
+"gentong": "res://dialogic/timelines/gentong.dtl",
 "gerobak": "res://gerobak.dtl",
 "jamur": "res://jamur.dtl",
 "masuk_ke_mapLvl3": "res://dialogic/timelines/masuk_ke_mapLvl3.dtl",
@@ -46,6 +49,7 @@ directories/dtl_directory={
 "npc4_dialog": "res://dialogic/timelines/npc4_dialog.dtl",
 "papan_pengumuman_desa": "res://dialogic/timelines/papan_pengumuman_desa.dtl",
 "pohon": "res://pohon.dtl",
+"rumah": "res://dialogic/timelines/rumah.dtl",
 "silent": "res://dialogic/timelines/silent.dtl",
 "timelines/npc1_questEnd": "res://dialogic/timelines/npc1_questEnd.dtl"
 }

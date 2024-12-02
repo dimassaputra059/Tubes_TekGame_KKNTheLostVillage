@@ -2,26 +2,22 @@ player: Permisi, kek. Apakah Anda yang dipanggil Datok Hassan?
 npc2: (Menoleh perlahan, senyum kecil menghiasi wajahnya)
 npc2: Benar, Nak. Kamu siapa, sepertinya kamu bukan orang sini?
 player: Iya, tok. Saya Budiono, mahasiswa KKN dari Desa Alur Jambu. Saya tidak sengaja sampai ke desa ini karena kesesat saat sedang keliling hutan disekitar desa. Kata cucu datok, Datok tahu jalan menuju desa Alur Jambu
-npc2: (Menghela napas panjang, pandangannya kembali ke danau.)
 npc2: Kamu beruntung nak, bisa di bantu dengan penduduk desa ini. Biasanya penduduk sini gk mudah buat di temukan
 player: Iya tok, alhamdulillah, kalo boleh tau kenapa tok ?
 npc2: Atok juga gk begitu tahu asal usul desa ini, yang jelas desa ini merupakan desa yang misterius dimana, penduduk sini juga sebenarnya tidak pernah mengalami kematian ataupun menua.
 player: Atok pasti bercanda kan tok ?
 npc2: Atok sebenarnya buka penduduk asli desa misterius ini, aslinya atok merupakan dukun tersohor di desa Alur Jambu. Atok sering menerima permintaan untuk menyantet orang.
 player: Terus gimana atok bisa sampai sini ?
-npc2: Dulu pas pemilihan kepala desa Alur Jambu, atok pernah diminta untuk menyantet calon lawan agar orang yang meminta jasa atok dapat jadi kepala desa. Tapi sayangnya santet atok tidak berpengaruh ke orang satu ini, mungkin amalan dia kuat, jadi santet atok tidak bekerja. Alhasil Klien atok pun marah dan berniat membunuh atok. Mendengar kabar itu pun, atok lari pergi ke hutan menyelamatkan diri, tapi berakhir ke desa misterius ini.
-player: Kalo atok bukan orang sini ? atok kok punya cucu disini.
-npc2: Soal itu ada ceritanya, saat atok sampai di desa ini atok ketemu dengan wanita misterius, saat atok tanya soal jalan pulang ke desa Alur Jambu. Wanita misterius itu justru marah, karena ada dukun santet yang datang kedesanya. Wanita misterius itu berubah menjadi sosok yang menyeramkan. Melihat sosok itu atok ketakutan hingga meminta pengampunan, dan atok diminta untuk menjaga seorang anak kecil sebagai bentuk penebusan dosa atok. Atok pun menyetujui hal itu.
+npc2: Dulu pas pemilihan kepala desa Alur Jambu, atok pernah diminta untuk menyantet calon lawan agar orang yang meminta jasa atok dapat jadi kepala desa. 
+npc2: Tapi sayangnya santet atok tidak berpengaruh ke orang satu ini, mungkin amalan dia kuat, jadi santet atok tidak bekerja. Alhasil Klien atok pun marah dan berniat membunuh atok. Mendengar kabar itu pun, atok lari pergi ke hutan menyelamatkan diri, tapi berakhir ke desa misterius ini.
 player: Jadi berapa lama atok disini
-npc2: Atok tidak tau persis berapa lama sudah di desa ini, mungkin sudah puluhan tahun”yang jelas selama di sini atok sebenarnya berkali-kali menemui orang yang tersesat namun meski atok dapat melihat mereka, tapi atok tidak dapat berinteraksi atau membantu mereka. Desa ini seolah-olah tidak bisa dilihat, dan orang-orang itu berujung tersesat karena pergi ke arah yang salah dan semakin dalam dihutan.
-player: Apa yang tersesat di desa ini setelah atok, baru saya tok ?
-npc2: Selama di sini atok sebenarnya berkali-kali menemui orang yang tersesat namun meski atok dapat melihat mereka, tapi atok tidak dapat berinteraksi atau membantu mereka. Desa ini seolah-olah tidak bisa dilihat, dan orang-orang itu berujung tersesat karena pergi ke arah yang salah dan semakin dalam dihutan. Jadi kamu sebenarnya sangat beruntuk bisa berinteraksi normal dengan penduduk sini, mungkin kamu orang yang baik.
+npc2: Atok tidak tau persis berapa lama sudah di desa ini, mungkin sudah puluhan tahun”yang jelas selama di sini atok sebenarnya berkali-kali menemui orang yang tersesat.
 player: Hehe, terima kasih tok cerita dan pujiannya? Tapi setelah mendengar cerita atok, saya tidak berani lagi kembali ke desa misterius itu dan bertanya ke penduduk disana lagi tok, apa atok tau jalan ke desa Alur Jambu.
-npc2: Karena sudah lama atok disini, sebenarnya atok tidak begitu ingat jalannya, tapi yang jelas jalan utam desa Alur Jambu itu ada di dekat danau di hutan sebelah Timur. Jika kamu beruntung, mungkin kamu bisa menemukannya. Tapi jalan utama desa Alur Jambu hanya bisa diliat saat malam hari, mulai dari setelah maghrib, hingga tengah malam. Jika kamu lewat dari jam tersebut dan masih tersesat di dalam hutan maka kamu akan tersesat di hutan selamanya.
+npc2: Karena sudah lama atok disini, sebenarnya atok tidak begitu ingat jalannya, tapi yang jelas jalan utam desa Alur Jambu itu ada di dekat danau di hutan sebelah Timur. Jika kamu beruntung, mungkin kamu bisa menemukannya.
+npc2:  Tapi jalan utama desa Alur Jambu hanya bisa diliat saat malam hari, mulai dari setelah maghrib, hingga tengah malam. Jika kamu lewat dari jam tersebut dan masih tersesat di dalam hutan maka kamu akan tersesat di hutan selamanya.
 player: Terima kasih tok infonya, tapi apa benar jalan utama itu hanya muncul di malam hari, jika begitu bagaimana saya bisa cari jalannya di malam hari.
 npc2: (Atok memberikan lentera)
-npc2: Ini atok ada lentera, lentera ini bisa membantu kamu untuk mencari jalan utama desa Alur Jambu. Lentera ini hanya bisa bertahan selama 6 jam, jadi pas sebagai penanda waktu dari selesai maghrib hingga tengah malam. Tapi saran atok, sebaiknya kamu tetap disini dan menjadi warga sini, karena di hutan sebelah timur terdapat harimau yang berkeliaran dan ditakutkan kamu juga akan bertemu sosok misterius lainnya
-player: Tidak tok, saya akan tetap mencoba untuk mencari jalan tersebut. Karena bagaimana pun, keluarga dan teman-teman saya pasti mengkhawatirkan saya. Jadi saya akan tetap berusaha keluar dari hutan ini.
-npc2: Baiklah jika itu sudah menjadi keputusanmu, terima kasih sudah mau mengobrol dengan atok, setelah bertahun-tahun atok tidak pernah lagi mengobrol dengan orang dari luar desa. Hari juga sudah mulai gelap, sebaiknya kamu segera pergi ke hutan sebelah timur.
+npc2: Ini atok ada lentera, lentera ini bisa membantu kamu untuk mencari jalan utama desa Alur Jambu. Lentera ini hanya bisa bertahan selama 6 jam, jadi pas sebagai penanda waktu dari selesai maghrib hingga tengah malam.
+npc2: Terima kasih sudah mau mengobrol dengan atok, setelah bertahun-tahun atok tidak pernah lagi mengobrol dengan orang dari luar desa. Hari juga sudah mulai gelap, sebaiknya kamu segera pergi ke hutan sebelah timur.
 player: Baik tok, sekali lagi terima kasih atas bantuannya.
 [signal arg="npc2_dialogEnd"]

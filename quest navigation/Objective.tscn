@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cemr0akiq2a4c"]
+[gd_scene load_steps=4 format=3 uid="uid://cemr0akiq2a4c"]
 
 [ext_resource type="Script" path="res://quest navigation/objective.gd" id="1_na0oc"]
+[ext_resource type="Texture2D" uid="uid://bkf1sht1gmjb3" path="res://Map/Tileset/ui_9patchrect.png" id="2_dcs8u"]
 [ext_resource type="FontFile" uid="uid://cqfqon0qvb1fb" path="res://asset/font.ttf" id="2_hut33"]
 
 [node name="Objective" type="CanvasLayer"]
@@ -12,6 +13,11 @@ offset_top = 34.0
 offset_right = 265.0
 offset_bottom = 91.0
 
+[node name="NinePatchRect" type="NinePatchRect" parent="TextBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_dcs8u")
+region_rect = Rect2(48, 0, 48, 16)
+
 [node name="MarginContainer" type="MarginContainer" parent="TextBoxContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 15
@@ -21,6 +27,7 @@ theme_override_constants/margin_bottom = 7
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TextBoxContainer/MarginContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
 
 [node name="Label" type="Label" parent="TextBoxContainer/MarginContainer/HBoxContainer"]
 z_index = 1
@@ -33,3 +40,4 @@ theme_override_constants/outline_size = 0
 theme_override_constants/shadow_outline_size = 2
 theme_override_fonts/font = ExtResource("2_hut33")
 text = "Hello"
+horizontal_alignment = 1

@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://b084wfpm6xabi"]
+[gd_scene load_steps=33 format=4 uid="uid://b084wfpm6xabi"]
 
 [ext_resource type="Texture2D" uid="uid://db6a3fpna8jg4" path="res://Map/Tileset/Tileset.png" id="1_136in"]
 [ext_resource type="Texture2D" uid="uid://b7rbj8b484ya5" path="res://Map/Tileset/TilesetVillageAbandoned.png" id="2_kr2q8"]
@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://dsygcpct1b1in" path="res://interact/PapanPengumumanDesa.tscn" id="12_k3olq"]
 [ext_resource type="PackedScene" uid="uid://c5u73nkel0d6m" path="res://interact/MenujuMapLvl3.tscn" id="14_cvmqr"]
 [ext_resource type="Script" path="res://masuk_desa.gd" id="14_rrkkk"]
+[ext_resource type="PackedScene" uid="uid://bcm6jnnnhwnnl" path="res://interact/danau_interact.tscn" id="14_tuywb"]
+[ext_resource type="PackedScene" uid="uid://upnjxabcts48" path="res://interact/Rumah.tscn" id="15_42x3n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mx6vb"]
 texture = ExtResource("1_136in")
@@ -721,6 +723,42 @@ script = ExtResource("14_rrkkk")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MasukDesa"]
 position = Vector2(314, 426)
 shape = SubResource("RectangleShape2D_lq5iv")
+
+[node name="DanauInteract" parent="." instance=ExtResource("14_tuywb")]
+position = Vector2(494, 639)
+
+[node name="DanauInteract2" parent="." instance=ExtResource("14_tuywb")]
+position = Vector2(924, 715)
+
+[node name="DanauInteract3" parent="." instance=ExtResource("14_tuywb")]
+position = Vector2(423, 664)
+
+[node name="Rumah" parent="." instance=ExtResource("15_42x3n")]
+position = Vector2(600, 488)
+
+[node name="Rumah2" parent="." instance=ExtResource("15_42x3n")]
+position = Vector2(824, 487)
+
+[node name="Rumah3" parent="." instance=ExtResource("15_42x3n")]
+position = Vector2(1240, 485)
+
+[node name="Rumah4" parent="." instance=ExtResource("15_42x3n")]
+position = Vector2(1448, 293)
+
+[node name="Rumah5" parent="." instance=ExtResource("15_42x3n")]
+position = Vector2(1752, 376)
+
+[node name="Rumah6" parent="." instance=ExtResource("15_42x3n")]
+position = Vector2(1703, 567)
+
+[node name="Rumah7" parent="." instance=ExtResource("15_42x3n")]
+position = Vector2(1144, 584)
+
+[node name="Rumah8" parent="." instance=ExtResource("15_42x3n")]
+position = Vector2(1208, 326)
+
+[node name="Rumah9" parent="." instance=ExtResource("15_42x3n")]
+position = Vector2(728, 262)
 
 [connection signal="body_entered" from="MasukDesa" to="MasukDesa" method="_on_body_entered"]
 [connection signal="body_exited" from="MasukDesa" to="MasukDesa" method="_on_body_exited"]

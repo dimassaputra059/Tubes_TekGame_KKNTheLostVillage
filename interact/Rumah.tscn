@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://upnjxabcts48"]
+
+[ext_resource type="Script" path="res://interact/rumah.gd" id="1_mmx73"]
+[ext_resource type="Texture2D" uid="uid://c476ak5mj5oy5" path="res://asset/interact-text.png" id="2_6syfa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0k5ue"]
+size = Vector2(57.5, 24.5)
+
+[node name="Rumah" type="Area2D"]
+script = ExtResource("1_mmx73")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_0k5ue")
+
+[node name="Label" type="NinePatchRect" parent="."]
+offset_left = -17.0
+offset_top = -24.0
+offset_right = 20.0
+offset_bottom = -11.0
+texture = ExtResource("2_6syfa")
+region_rect = Rect2(0, 0, 400, 100)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
