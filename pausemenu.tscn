@@ -4,7 +4,7 @@
 [ext_resource type="Shader" path="res://pausemenu.gdshader" id="1_ytik5"]
 [ext_resource type="FontFile" uid="uid://c6kv74qc33mgu" path="res://asset/Lacquer-Regular.ttf" id="3_kma6f"]
 [ext_resource type="Script" path="res://brightness.gd" id="4_1f4v7"]
-[ext_resource type="PackedScene" path="res://Volume.tscn" id="5_b6qhb"]
+[ext_resource type="PackedScene" uid="uid://hcrih80nm8aa" path="res://Volume.tscn" id="5_b6qhb"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_irlgb"]
 shader = ExtResource("1_ytik5")

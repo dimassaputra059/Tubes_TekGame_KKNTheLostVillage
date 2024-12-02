@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://c476ak5mj5oy5" path="res://asset/interact-text.png" id="12_qt6ky"]
 [ext_resource type="PackedScene" uid="uid://cemr0akiq2a4c" path="res://quest navigation/Objective.tscn" id="13_r73y4"]
 [ext_resource type="PackedScene" uid="uid://cv3psll77e6bu" path="res://pausemenu.tscn" id="14_eme6b"]
-[ext_resource type="AudioStream" uid="uid://dkho1sn7kwho" path="res://asset/Ambient 10 (mp3cut.net).mp3" id="15_00rlv"]
+[ext_resource type="AudioStream" uid="uid://bswb6ebj40fpc" path="res://asset/Night Ambient 5 (Loop).mp3" id="16_46m6r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j28lo"]
 texture = ExtResource("1_owlg1")
@@ -5420,9 +5420,11 @@ position = Vector2(1375, 256)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="pause" parent="CanvasLayer" instance=ExtResource("14_eme6b")]
+offset_left = -1.0
+offset_right = -1.0
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("15_00rlv")
+stream = ExtResource("16_46m6r")
 autoplay = true
 
 [connection signal="body_entered" from="Gerobak" to="TileMap" method="_on_gerobak_body_entered"]

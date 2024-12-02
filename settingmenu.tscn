@@ -1,10 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bsdnpajvo4ip6"]
+[gd_scene load_steps=9 format=3 uid="uid://cmkkggxugwydp"]
 
 [ext_resource type="Script" path="res://setting.gd" id="1_rlpnq"]
-[ext_resource type="Texture2D" uid="uid://bieqxd8bvfud3" path="res://asset/Screenshot 2024-12-02 105722.png" id="2_opsi7"]
+[ext_resource type="Texture2D" uid="uid://c43vsi2uxlo6r" path="res://asset/Screenshot 2024-12-02 105722.png" id="2_opsi7"]
 [ext_resource type="FontFile" uid="uid://c6kv74qc33mgu" path="res://asset/Lacquer-Regular.ttf" id="3_jwyc7"]
 [ext_resource type="Script" path="res://brightness.gd" id="4_yj652"]
-[ext_resource type="PackedScene" uid="uid://fl2ymb0iy0fu" path="res://Volume.tscn" id="5_i0emq"]
+[ext_resource type="PackedScene" uid="uid://hcrih80nm8aa" path="res://Volume.tscn" id="5_i0emq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_umd0i"]
 texture = ExtResource("2_opsi7")
