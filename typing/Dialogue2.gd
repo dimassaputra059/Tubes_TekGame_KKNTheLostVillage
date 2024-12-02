@@ -1,12 +1,9 @@
 extends Node2D
 
 var messages = [
-	"Budiono, seorang mahasiswa yang sedang melaksanakan Kuliah Kerja Nyata (KKN) ",
-	"di Desa Alur Jambu, yang berada di pulau Sumatera",
-	"ketika dia bertualang ke hutan di sekitar desa",
-	"ia terus melangkah lebih jauh",
-	"hingga tanpa disadari",
-	"ia tersesat di tengah hutan lebat"
+	"Budiono, segera pergi ke hutan Timur",
+	"Dia harus segera menemukan jalan utama Desa Alur Jambu",
+	"Sebelum Lentera mati dan berakhir tersesat di hutan selamanya"
 ]
 
 var typing_speed = .1
@@ -31,7 +28,7 @@ func start_dialogue():
 func stop_dialogue():
 	
 	# Ganti ke scene tujuan
-	get_tree().change_scene_to_file("res://map_lv_1.tscn")
+	get_tree().change_scene_to_file("res://map_lv_3.tscn")
 	
 func _on_next_char_timeout():
 	if (current_char < len(messages[current_message])):

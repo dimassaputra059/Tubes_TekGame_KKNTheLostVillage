@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 	elif objective == 2:
 		add_text("Bertanya ke penduduk")
 	elif objective == 3:
-		add_text("Mencari Jamur ke barat")
+		add_text("Mencari Jamur di dekat pohon besar")
 	elif objective == 4:
 		add_text("Kembali ke Nenek")
 	elif objective == 5:
