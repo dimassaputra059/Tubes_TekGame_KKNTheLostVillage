@@ -8,3 +8,5 @@ signal updated
 func _process(delta: float)-> void:
 	date_time.decrease_by_sec(delta * ticks_pr_second)
 	updated.emit(date_time)
+	
+	

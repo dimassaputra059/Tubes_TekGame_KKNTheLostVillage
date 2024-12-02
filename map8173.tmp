@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://bdndpbbnhd8ou"]
+[gd_scene load_steps=32 format=4 uid="uid://bdndpbbnhd8ou"]
 
 [ext_resource type="Texture2D" uid="uid://bvfo7qifry3fs" path="res://Map/Tileset/Decorations.png" id="1_2f4ij"]
 [ext_resource type="Script" path="res://map_lv_3.gd" id="1_i4xxa"]
@@ -8,25 +8,9 @@
 [ext_resource type="Script" path="res://time/time_system.gd" id="4_fke80"]
 [ext_resource type="Texture2D" uid="uid://dufoh1tco8i42" path="res://Map/Tileset/TilesetElement.png" id="5_6wk60"]
 [ext_resource type="Script" path="res://time/date_time.gd" id="5_uhu8f"]
-<<<<<<< Updated upstream
-[ext_resource type="PackedScene" path="res://time_ui.tscn" id="6_nu6m0"]
-
-[sub_resource type="Gradient" id="Gradient_jwu8k"]
-offsets = PackedFloat32Array(0, 0.655844, 1)
-colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_tnwy5"]
-gradient = SubResource("Gradient_jwu8k")
-width = 300
-height = 300
-fill = 1
-fill_from = Vector2(0.5, 0.5)
-=======
 [ext_resource type="PackedScene" uid="uid://21ueyui1gamg" path="res://time_ui.tscn" id="6_nu6m0"]
-[ext_resource type="Script" path="res://end_game_collision.gd" id="8_k2ksa"]
 [ext_resource type="Script" path="res://game_over.gd" id="8_ojcx1"]
-[ext_resource type="FontFile" uid="uid://cpmc0tyjk6x3u" path="res://Map/Tileset/Lacquer-Regular.ttf" id="10_j1eh7"]
->>>>>>> Stashed changes
+[ext_resource type="FontFile" uid="uid://dsnh5hqjxk5pi" path="res://Map/Tileset/Kenney Future Narrow.ttf" id="8_y42rp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tx0wd"]
 texture = ExtResource("1_2f4ij")
@@ -1528,9 +1512,6 @@ seconds = 0
 minutes = 0
 hours = 6
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ssdq"]
-size = Vector2(59, 44)
-
 [sub_resource type="Gradient" id="Gradient_jwu8k"]
 offsets = PackedFloat32Array(0, 0.655844, 1)
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1)
@@ -1590,15 +1571,7 @@ tile_set = SubResource("TileSet_hair3")
 [node name="TimeSystem" type="Node" parent="."]
 script = ExtResource("4_fke80")
 date_time = SubResource("Resource_3x0ee")
-ticks_pr_second = 2000
-
-[node name="End_Game_Collision" type="Area2D" parent="." groups=["player"]]
-position = Vector2(2412, 299)
-script = ExtResource("8_k2ksa")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="End_Game_Collision"]
-position = Vector2(211.5, 509)
-shape = SubResource("RectangleShape2D_3ssdq")
+ticks_pr_second = 300
 
 [node name="Player" parent="." instance=ExtResource("3_jrstr")]
 y_sort_enabled = true
@@ -1614,69 +1587,67 @@ limit_right = 2720
 limit_bottom = 1310
 
 [node name="PointLight2D" type="PointLight2D" parent="Player"]
-position = Vector2(1, 5)
 texture = SubResource("GradientTexture2D_tnwy5")
 
 [node name="GameOver" type="CanvasLayer" parent="."]
-process_mode = 3
 
 [node name="GameOver" type="Control" parent="GameOver"]
-process_mode = 1
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -252.0
-offset_top = -136.0
-offset_right = 260.0
-offset_bottom = 120.0
+offset_left = -256.0
+offset_top = -128.0
+offset_right = 256.0
+offset_bottom = 128.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("8_ojcx1")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="GameOver/GameOver"]
-process_mode = 3
 layout_mode = 0
-offset_left = -1.0
-offset_top = 1.0
-offset_right = 511.0
-offset_bottom = 257.0
+offset_right = 512.0
+offset_bottom = 256.0
 texture = SubResource("ViewportTexture_6xm5p")
 draw_center = false
 
 [node name="Label" type="Label" parent="GameOver/GameOver"]
-process_mode = 3
 layout_mode = 0
-offset_left = 10.0
-offset_top = 17.0
-offset_right = 522.0
-offset_bottom = 75.0
-theme_override_fonts/font = ExtResource("10_j1eh7")
+offset_left = -1.0
+offset_top = 62.0
+offset_right = 511.0
+offset_bottom = 116.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("8_y42rp")
 theme_override_font_sizes/font_size = 48
 text = "GAME OVER"
 horizontal_alignment = 1
 
-[node name="Label2" type="Label" parent="GameOver/GameOver"]
+[node name="Restart" type="Button" parent="GameOver/GameOver"]
 layout_mode = 0
-offset_left = 122.0
-offset_top = 111.0
-offset_right = 403.0
-offset_bottom = 134.0
-theme_override_fonts/font = ExtResource("10_j1eh7")
-text = "Budiono Terjebak di Hutan Selamanya"
+offset_left = 117.0
+offset_top = 155.0
+offset_right = 229.0
+offset_bottom = 186.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0.941176, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0.968627, 0, 1)
+theme_override_fonts/font = ExtResource("8_y42rp")
+theme_override_font_sizes/font_size = 18
+text = "Restart
+"
 
 [node name="Quit" type="Button" parent="GameOver/GameOver"]
-process_mode = 3
 layout_mode = 0
-offset_left = 215.0
-offset_top = 166.0
-offset_right = 310.0
-offset_bottom = 203.0
+offset_left = 300.0
+offset_top = 156.0
+offset_right = 373.0
+offset_bottom = 187.0
 theme_override_colors/font_hover_color = Color(0.976471, 0, 0, 1)
-theme_override_fonts/font = ExtResource("10_j1eh7")
-theme_override_font_sizes/font_size = 24
+theme_override_fonts/font = ExtResource("8_y42rp")
+theme_override_font_sizes/font_size = 18
 text = "Quit
 "
 
@@ -1694,5 +1665,4 @@ offset_bottom = 73.0
 grow_horizontal = 0
 
 [connection signal="updated" from="TimeSystem" to="TimeBar/Time_GUI" method="_on_time_system_updated"]
-[connection signal="body_entered" from="End_Game_Collision" to="End_Game_Collision" method="_on_body_entered"]
-[connection signal="pressed" from="GameOver/GameOver/Quit" to="GameOver/GameOver" method="_on_quit_pressed"]
+[connection signal="pressed" from="GameOver/GameOver/Restart" to="GameOver" method="_on_restart_pressed"]

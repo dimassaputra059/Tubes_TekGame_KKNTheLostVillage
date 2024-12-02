@@ -152,7 +152,7 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jqkuk"]
 size = Vector2(11, 9)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 texture_filter = 1
 script = ExtResource("1_3gc7u")
 

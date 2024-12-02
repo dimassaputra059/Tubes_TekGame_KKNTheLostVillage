@@ -6,6 +6,8 @@ class_name DateTime extends Resource
 
 var delta_time: float = 0
 
+signal time_expired
+
 func decrease_by_sec(delta_seconds: float) -> void:
 	delta_time += delta_seconds
 	if delta_time < 1: return
@@ -21,5 +23,6 @@ func decrease_by_sec(delta_seconds: float) -> void:
 	hours = total_seconds / 3600
 	minutes = (total_seconds % 3600) / 60
 	seconds = total_seconds % 60
-
-	print_debug(str(hours) + ":" + str(minutes) + ":" + str(seconds))
+	
+	if hours == 0 and minutes == 0 and seconds == 0:
+		emit_signal("time_expired")  # Emit sinyal waktu habis

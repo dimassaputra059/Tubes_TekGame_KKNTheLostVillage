@@ -85,6 +85,10 @@ window/size/window_height_override=648
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
+[global_group]
+
+player=""
+
 [input]
 
 ui_left={

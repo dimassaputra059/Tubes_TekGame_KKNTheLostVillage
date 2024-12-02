@@ -7,7 +7,7 @@
 [node name="Time_GUI" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 166.0
+offset_right = 198.0
 offset_bottom = 47.0
 script = ExtResource("1_3owx8")
 
