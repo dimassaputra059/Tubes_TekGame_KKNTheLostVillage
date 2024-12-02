@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://46ml80naoyjk"]
+[gd_scene load_steps=3 format=3 uid="uid://bs8no766pwm1l"]
 
 [ext_resource type="Script" path="res://typing/Dialogue2.gd" id="1_gtwwl"]
 [ext_resource type="FontFile" uid="uid://cy4apunlm3a4c" path="res://typing/superstar_memesbruh03.ttf" id="2_mubgc"]

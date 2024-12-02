@@ -2,7 +2,7 @@ extends Node2D
 
 var messages = [
 	"Budiono, seorang mahasiswa yang sedang melaksanakan Kuliah Kerja Nyata (KKN) ",
-	"di Desa Alur Jambu",
+	"di Desa Alur Jambu, yang berada di pulau Sumatera",
 	"ketika dia bertualang ke hutan di sekitar desa",
 	"ia terus melangkah lebih jauh",
 	"hingga tanpa disadari",
