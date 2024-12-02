@@ -18,6 +18,7 @@ func run_dialogue(dialogue_string):
 func DialogicSignal(arg: String):
 	if arg == "next_mapLvl3":
 		change_scene()
+		Dialogic.emit_signal("signal_event", "keluar_dari_mapLvl2")
 	elif arg == "open_mapLvl3":
 		$".".visible = true
 		

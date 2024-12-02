@@ -6,6 +6,8 @@ var player_in_pohon = false
 var player_in_jamur = false
 var player_in_batas = false
 
+var player_interect_batas = true
+
 func _process(delta):
 	if player_in_gerobak:
 		if Input.is_action_just_pressed("interact"):
@@ -17,8 +19,10 @@ func _process(delta):
 		if Input.is_action_just_pressed("interact"):
 			run_dialogue("jamur")
 	if player_in_batas:
-		if Input.is_action_just_pressed("interact"):
+		if Input.is_anything_pressed() and player_interect_batas:
 			run_dialogue("batas_lvl_2")
+			player_interect_batas = false
+			Dialogic.emit_signal("signal_event", "masuk_ke_hutan")
 
 func run_dialogue(dialogue_string):
 	Dialogic.timeline_ended.connect(ended)

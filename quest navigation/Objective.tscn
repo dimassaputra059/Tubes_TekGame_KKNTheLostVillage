@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://cemr0akiq2a4c"]
+
+[ext_resource type="Script" path="res://quest navigation/objective.gd" id="1_na0oc"]
+[ext_resource type="FontFile" uid="uid://cqfqon0qvb1fb" path="res://asset/font.ttf" id="2_hut33"]
+
+[node name="Objective" type="CanvasLayer"]
+script = ExtResource("1_na0oc")
+
+[node name="TextBoxContainer" type="MarginContainer" parent="."]
+offset_left = 33.0
+offset_top = 34.0
+offset_right = 265.0
+offset_bottom = 91.0
+
+[node name="MarginContainer" type="MarginContainer" parent="TextBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 7
+theme_override_constants/margin_right = 7
+theme_override_constants/margin_bottom = 7
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextBoxContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TextBoxContainer/MarginContainer/HBoxContainer"]
+z_index = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 2
+theme_override_fonts/font = ExtResource("2_hut33")
+text = "Hello"

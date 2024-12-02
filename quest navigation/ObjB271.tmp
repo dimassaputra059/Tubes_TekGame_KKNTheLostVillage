@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://cemr0akiq2a4c"]
+
+[ext_resource type="Script" path="res://quest navigation/objective.gd" id="1_na0oc"]
+[ext_resource type="FontFile" uid="uid://cqfqon0qvb1fb" path="res://asset/font.ttf" id="2_hut33"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h82vl"]
+bg_color = Color(0.513279, 0.649211, 0.419991, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+
+[node name="Objective" type="CanvasLayer"]
+script = ExtResource("1_na0oc")
+
+[node name="TextBoxContainer" type="MarginContainer" parent="."]
+offset_left = 33.0
+offset_top = 34.0
+offset_right = 265.0
+offset_bottom = 91.0
+
+[node name="Panel" type="Panel" parent="TextBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_h82vl")
+
+[node name="MarginContainer" type="MarginContainer" parent="TextBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 7
+theme_override_constants/margin_right = 7
+theme_override_constants/margin_bottom = 7
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextBoxContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TextBoxContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hut33")
+text = "Hello"

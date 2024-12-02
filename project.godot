@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+GlobalWorldEnvironment="*res://world_environment.tscn"
 
 [dialogic]
 
@@ -30,7 +31,10 @@ directories/dch_directory={
 "wanita_misterius": "res://dialogic/characters/wanita_misterius.dch"
 }
 directories/dtl_directory={
+"batas_lvl_2": "res://batas_lvl_2.dtl",
 "dialog_wanita_misterius": "res://dialogic/timelines/dialog_wanita_misterius.dtl",
+"gerobak": "res://gerobak.dtl",
+"jamur": "res://jamur.dtl",
 "masuk_ke_mapLvl3": "res://dialogic/timelines/masuk_ke_mapLvl3.dtl",
 "npc1_questComplete": "res://dialogic/timelines/npc1_questComplete.dtl",
 "npc1_questIncomplete": "res://dialogic/timelines/npc1_questIncomplete.dtl",
@@ -40,6 +44,7 @@ directories/dtl_directory={
 "npc3_dialog": "res://dialogic/timelines/npc3_dialog.dtl",
 "npc4_dialog": "res://dialogic/timelines/npc4_dialog.dtl",
 "papan_pengumuman_desa": "res://dialogic/timelines/papan_pengumuman_desa.dtl",
+"pohon": "res://pohon.dtl",
 "silent": "res://dialogic/timelines/silent.dtl",
 "timelines/npc1_questEnd": "res://dialogic/timelines/npc1_questEnd.dtl"
 }
@@ -126,6 +131,11 @@ dialogic_default_action={
 interact={
 "deadzone": 0.5,
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":69,"key_label":0,"unicode":101,"location":0,"echo":false,"script":null)
+]
+}
+esc={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
 

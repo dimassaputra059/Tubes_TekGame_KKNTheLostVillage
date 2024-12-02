@@ -1,0 +1,142 @@
+[gd_scene load_steps=7 format=3 uid="uid://cy65ewvqvffxn"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_fkm3m"]
+[ext_resource type="FontFile" uid="uid://c6kv74qc33mgu" path="res://asset/Lacquer-Regular.ttf" id="2_aasa3"]
+[ext_resource type="Texture2D" uid="uid://c43vsi2uxlo6r" path="res://asset/Screenshot 2024-12-02 105722.png" id="2_psice"]
+[ext_resource type="AudioStream" uid="uid://ch13t612g0s5x" path="res://asset/Night Ambient 5 (Loop).mp3" id="4_ydlyp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kj1tk"]
+texture = ExtResource("2_psice")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h85fx"]
+bg_color = Color(1, 1, 1, 0)
+border_color = Color(0.489622, 0.489622, 0.489622, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 9
+shadow_color = Color(0.39223, 0.466916, 0.196109, 0.937255)
+shadow_size = 1
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fkm3m")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_kj1tk")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -97.0
+offset_top = -276.0
+offset_right = 85.0
+offset_bottom = -156.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.02656, 0.985907)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_aasa3")
+theme_override_font_sizes/font_size = 100
+text = "KKN"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -242.0
+offset_top = -149.0
+offset_right = 232.0
+offset_bottom = -77.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_aasa3")
+theme_override_font_sizes/font_size = 60
+text = "The Lost village"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -121.0
+offset_top = -15.0
+offset_right = 105.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Play" type="Button" parent="VBoxContainer"]
+self_modulate = Color(0.95158, 0.95158, 0.95158, 1)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_aasa3")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_h85fx")
+text = "Play"
+
+[node name="settings" type="Button" parent="VBoxContainer"]
+self_modulate = Color(0.95158, 0.95158, 0.95158, 1)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_aasa3")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_h85fx")
+text = "Settings"
+
+[node name="Credits" type="Button" parent="VBoxContainer"]
+self_modulate = Color(0.95158, 0.95158, 0.95158, 1)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_aasa3")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_h85fx")
+text = "Credits"
+
+[node name="exit" type="Button" parent="VBoxContainer"]
+self_modulate = Color(0.95158, 0.95158, 0.95158, 1)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_aasa3")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_h85fx")
+text = "Quit"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_ydlyp")
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
