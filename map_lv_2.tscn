@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://b084wfpm6xabi"]
+[gd_scene load_steps=32 format=4 uid="uid://b084wfpm6xabi"]
 
 [ext_resource type="Texture2D" uid="uid://db6a3fpna8jg4" path="res://Map/Tileset/Tileset.png" id="1_136in"]
 [ext_resource type="Texture2D" uid="uid://b7rbj8b484ya5" path="res://Map/Tileset/TilesetVillageAbandoned.png" id="2_kr2q8"]
@@ -655,6 +655,9 @@ sources/1 = SubResource("TileSetAtlasSource_jskcr")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lq5iv"]
 size = Vector2(56, 340)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ivv8m"]
+size = Vector2(190, 69)
+
 [node name="Map_Lv_2" type="Node2D"]
 y_sort_enabled = true
 
@@ -719,8 +722,16 @@ position = Vector2(2245, 398)
 script = ExtResource("14_rrkkk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MasukDesa"]
-position = Vector2(314, 426)
+position = Vector2(423, 418)
 shape = SubResource("RectangleShape2D_lq5iv")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="MasukDesa"]
+position = Vector2(310, 282.5)
+shape = SubResource("RectangleShape2D_ivv8m")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="MasukDesa"]
+position = Vector2(331, 598)
+shape = SubResource("RectangleShape2D_ivv8m")
 
 [connection signal="body_entered" from="MasukDesa" to="MasukDesa" method="_on_body_entered"]
 [connection signal="body_exited" from="MasukDesa" to="MasukDesa" method="_on_body_exited"]

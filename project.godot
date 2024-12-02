@@ -17,8 +17,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 GlobalWorldEnvironment="*res://world_environment.tscn"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
@@ -38,6 +38,7 @@ directories/dtl_directory={
 "jamur": "res://jamur.dtl",
 "masuk_ke_mapLvl3": "res://dialogic/timelines/masuk_ke_mapLvl3.dtl",
 "npc1_questComplete": "res://dialogic/timelines/npc1_questComplete.dtl",
+"npc1_questEnd": "res://dialogic/timelines/npc1_questEnd.dtl",
 "npc1_questIncomplete": "res://dialogic/timelines/npc1_questIncomplete.dtl",
 "npc1_questStart": "res://dialogic/timelines/npc1_questStart.dtl",
 "npc2_dialog": "res://dialogic/timelines/npc2_dialog.dtl",
@@ -47,7 +48,7 @@ directories/dtl_directory={
 "papan_pengumuman_desa": "res://dialogic/timelines/papan_pengumuman_desa.dtl",
 "pohon": "res://pohon.dtl",
 "silent": "res://dialogic/timelines/silent.dtl",
-"timelines/npc1_questEnd": "res://dialogic/timelines/npc1_questEnd.dtl"
+"welcomelvl2": "res://welcomelvl2.dtl"
 }
 variables={
 "quest_npc1": false,
