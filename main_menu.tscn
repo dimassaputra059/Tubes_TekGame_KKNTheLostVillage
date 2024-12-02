@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://main_menu.gd" id="1_fkm3m"]
 [ext_resource type="FontFile" uid="uid://c6kv74qc33mgu" path="res://asset/Lacquer-Regular.ttf" id="2_aasa3"]
 [ext_resource type="Texture2D" uid="uid://c43vsi2uxlo6r" path="res://asset/Screenshot 2024-12-02 105722.png" id="2_psice"]
-[ext_resource type="AudioStream" uid="uid://ch13t612g0s5x" path="res://asset/Night Ambient 5 (Loop).mp3" id="4_ydlyp"]
+[ext_resource type="AudioStream" uid="uid://bswb6ebj40fpc" path="res://asset/Night Ambient 5 (Loop).mp3" id="4_ydlyp"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kj1tk"]
 texture = ExtResource("2_psice")
