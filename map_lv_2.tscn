@@ -10,8 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://b38vl3s8q24pr" path="res://npc/npc3.tscn" id="8_v2phe"]
 [ext_resource type="PackedScene" uid="uid://cqeu8v2qf4fqe" path="res://npc/npc4.tscn" id="9_ee8w3"]
 [ext_resource type="PackedScene" uid="uid://b0lmqflsf2uv7" path="res://npc/wanita_misterius.tscn" id="10_wd7ks"]
-[ext_resource type="PackedScene" uid="uid://dsygcpct1b1in" path="res://interect/PapanPengumumanDesa.tscn" id="12_k3olq"]
-[ext_resource type="PackedScene" uid="uid://c5u73nkel0d6m" path="res://interect/MenujuMapLvl3.tscn" id="14_cvmqr"]
+[ext_resource type="PackedScene" uid="uid://dsygcpct1b1in" path="res://interact/PapanPengumumanDesa.tscn" id="12_k3olq"]
+[ext_resource type="PackedScene" uid="uid://c5u73nkel0d6m" path="res://interact/MenujuMapLvl3.tscn" id="14_cvmqr"]
 [ext_resource type="Script" path="res://masuk_desa.gd" id="14_rrkkk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mx6vb"]

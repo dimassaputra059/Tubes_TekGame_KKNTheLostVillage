@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c5u73nkel0d6m"]
 
-[ext_resource type="Script" path="res://interect/menuju_map_lvl_3.gd" id="1_ydisw"]
+[ext_resource type="Script" path="res://interact/menuju_map_lvl_3.gd" id="1_ydisw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c2301"]
 size = Vector2(120.75, 145.625)

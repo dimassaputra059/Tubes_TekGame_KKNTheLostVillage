@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://7638wlo7xd36"]
+[gd_scene load_steps=9 format=3 uid="uid://7638wlo7xd36"]
 
 [ext_resource type="Script" path="res://npc/npc_2.gd" id="1_y6p3g"]
 [ext_resource type="Texture2D" uid="uid://d10mr0ppl4qea" path="res://asset/npc_grandfather.png" id="2_xl7k4"]
+[ext_resource type="Texture2D" uid="uid://c476ak5mj5oy5" path="res://asset/interact-text.png" id="3_jx0ft"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8pddi"]
 atlas = ExtResource("2_xl7k4")
@@ -48,14 +49,13 @@ shape = SubResource("RectangleShape2D_wm300")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="chatDetection"]
 shape = SubResource("CircleShape2D_5i3iy")
 
-[node name="Label" type="Label" parent="chatDetection"]
-offset_left = -130.0
-offset_top = -125.0
-offset_right = 132.0
-offset_bottom = -70.0
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "[E] to Interect"
+[node name="Label" type="NinePatchRect" parent="chatDetection"]
+offset_left = -80.0
+offset_top = -102.0
+offset_right = 87.0
+offset_bottom = -53.0
+texture = ExtResource("3_jx0ft")
+region_rect = Rect2(0, 0, 400, 100)
 
 [connection signal="body_entered" from="chatDetection" to="." method="_on_chat_detection_body_entered"]
 [connection signal="body_exited" from="chatDetection" to="." method="_on_chat_detection_body_exited"]

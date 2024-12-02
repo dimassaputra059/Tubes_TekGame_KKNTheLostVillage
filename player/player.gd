@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 50
+@export var speed = 150
 @onready var animations = $AnimationPlayer	
 var start_position: Vector2
 

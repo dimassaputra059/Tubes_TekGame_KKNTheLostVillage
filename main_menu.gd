@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_play_pressed():
-	get_tree().change_scene_to_file("res://map_lv_1.tscn")  # Change to the option control scene
+	get_tree().change_scene_to_file("res://typing/Dialogue.tscn")  # Change to the option control scene
 
 
 func _on_settings_pressed():

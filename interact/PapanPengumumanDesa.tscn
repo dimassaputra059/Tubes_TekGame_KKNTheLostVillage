@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dsygcpct1b1in"]
 
-[ext_resource type="Script" path="res://interect/papan_pengumuman_desa.gd" id="1_vqmn2"]
+[ext_resource type="Script" path="res://interact/papan_pengumuman_desa.gd" id="1_vqmn2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mrt22"]
 radius = 45.0444
@@ -13,7 +13,7 @@ offset_left = -52.0
 offset_top = -45.0
 offset_right = 55.0
 offset_bottom = -22.0
-text = "[E] to Interect"
+text = "[E] to Interact"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_mrt22")

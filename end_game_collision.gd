@@ -13,4 +13,4 @@ func _on_body_entered(body: Node) -> void:
 func game_over() -> void:
 	print("End Game triggered!")  # Debugging output
 	await get_tree().create_timer(1.5).timeout
-	get_tree().change_scene_to_file("res://map_lv_2.tscn")
+	get_tree().change_scene_to_file("res://typing/Dialogue_end.tscn")

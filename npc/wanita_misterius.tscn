@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://b0lmqflsf2uv7"]
+[gd_scene load_steps=9 format=3 uid="uid://b0lmqflsf2uv7"]
 
 [ext_resource type="Script" path="res://npc/wanita_misterius.gd" id="1_idyis"]
 [ext_resource type="Texture2D" uid="uid://d33lrtwtxpb1m" path="res://asset/wanita_misterius.png" id="2_fjvd3"]
+[ext_resource type="Texture2D" uid="uid://c476ak5mj5oy5" path="res://asset/interact-text.png" id="3_g18rc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yhw8t"]
 atlas = ExtResource("2_fjvd3")
@@ -48,14 +49,13 @@ shape = SubResource("RectangleShape2D_jkvwm")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="chatDetection"]
 shape = SubResource("CircleShape2D_saam2")
 
-[node name="Label" type="Label" parent="chatDetection"]
-offset_left = -130.0
-offset_top = -112.0
-offset_right = 132.0
-offset_bottom = -57.0
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "[E] to Interect"
+[node name="Label" type="NinePatchRect" parent="chatDetection"]
+offset_left = -59.0
+offset_top = -88.0
+offset_right = 59.0
+offset_bottom = -48.0
+texture = ExtResource("3_g18rc")
+region_rect = Rect2(0, 0, 400, 100)
 
 [connection signal="body_entered" from="chatDetection" to="." method="_on_chat_detection_body_entered"]
 [connection signal="body_exited" from="chatDetection" to="." method="_on_chat_detection_body_exited"]

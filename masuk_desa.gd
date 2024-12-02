@@ -1,11 +1,12 @@
 extends Area2D
 
 var player_is_area = false
-var player_interect_batas = true
+var player_interact_batas = true
 
 func _process(delta):
 	if player_is_area:
-		if Input.is_anything_pressed() and player_interect_batas:
+		if Input.is_anything_pressed() and player_interact_batas:
+			player_interact_batas = false
 			Dialogic.emit_signal("signal_event", "masuk_ke_desa")
 
 func _on_body_entered(body: Node2D) -> void:

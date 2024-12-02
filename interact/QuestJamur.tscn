@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cwq4oeedompoy"]
+[gd_scene load_steps=5 format=3 uid="uid://cwq4oeedompoy"]
 
-[ext_resource type="Script" path="res://interect/quest_jamur.gd" id="1_74oqp"]
+[ext_resource type="Script" path="res://interact/quest_jamur.gd" id="1_74oqp"]
 [ext_resource type="Texture2D" uid="uid://bvfo7qifry3fs" path="res://Map/Tileset/Decorations.png" id="2_w1oxu"]
+[ext_resource type="Texture2D" uid="uid://c476ak5mj5oy5" path="res://asset/interact-text.png" id="3_4vu7d"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2tssy"]
 radius = 21.0
@@ -18,13 +19,13 @@ hframes = 8
 vframes = 8
 frame = 5
 
-[node name="Label" type="Label" parent="."]
-offset_left = -9.0
-offset_top = -25.0
-offset_right = 9.0
-offset_bottom = -11.0
-theme_override_font_sizes/font_size = 10
-text = "[ E ]"
+[node name="Label" type="NinePatchRect" parent="."]
+offset_left = -14.0
+offset_top = -18.0
+offset_right = 15.0
+offset_bottom = -9.0
+texture = ExtResource("3_4vu7d")
+region_rect = Rect2(0, 0, 400, 100)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

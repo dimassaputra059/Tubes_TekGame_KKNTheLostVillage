@@ -6,7 +6,11 @@ var player_in_pohon = false
 var player_in_jamur = false
 var player_in_batas = false
 
-var player_interect_batas = true
+var player_interact_batas = true
+
+func _ready():
+	$"../Gerobak/Label".visible = false
+	$"../Pohon raksasa/Label".visible = false
 
 func _process(delta):
 	if player_in_gerobak:
@@ -19,9 +23,9 @@ func _process(delta):
 		if Input.is_action_just_pressed("interact"):
 			run_dialogue("jamur")
 	if player_in_batas:
-		if Input.is_anything_pressed() and player_interect_batas:
+		if Input.is_anything_pressed() and player_interact_batas:
 			run_dialogue("batas_lvl_2")
-			player_interect_batas = false
+			player_interact_batas = false
 			Dialogic.emit_signal("signal_event", "masuk_ke_hutan")
 
 func run_dialogue(dialogue_string):
@@ -35,20 +39,24 @@ func ended():
 func _on_gerobak_body_entered(body):
 	if body.has_method("player"):
 		player_in_gerobak = true
+		$"../Gerobak/Label".visible = true
 
 func _on_gerobak_body_exited(body):
 	if body.has_method("player"):
 		player_in_gerobak = false
+		$"../Gerobak/Label".visible = false
 
 
 func _on_pohon_raksasa_body_entered(body):
 	if body.has_method("player"):
 		player_in_pohon = true
+		$"../Pohon raksasa/Label".visible = true
 
 
 func _on_pohon_raksasa_body_exited(body):
 	if body.has_method("player"):
 		player_in_pohon = false
+		$"../Pohon raksasa/Label".visible = false
 
 
 func _on_jamur_body_entered(body: Node2D) -> void:

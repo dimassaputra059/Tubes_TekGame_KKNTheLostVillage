@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://bdndpbbnhd8ou"]
+[gd_scene load_steps=38 format=4 uid="uid://bdndpbbnhd8ou"]
 
 [ext_resource type="Texture2D" uid="uid://bvfo7qifry3fs" path="res://Map/Tileset/Decorations.png" id="1_2f4ij"]
 [ext_resource type="Script" path="res://map_lv_3.gd" id="1_i4xxa"]
@@ -11,7 +11,10 @@
 [ext_resource type="PackedScene" uid="uid://21ueyui1gamg" path="res://time_ui.tscn" id="6_nu6m0"]
 [ext_resource type="Script" path="res://end_game_collision.gd" id="8_k2ksa"]
 [ext_resource type="Script" path="res://game_over.gd" id="8_ojcx1"]
-[ext_resource type="FontFile" uid="uid://cpmc0tyjk6x3u" path="res://Map/Tileset/Lacquer-Regular.ttf" id="10_j1eh7"]
+[ext_resource type="FontFile" uid="uid://c6kv74qc33mgu" path="res://asset/Lacquer-Regular.ttf" id="11_g5wfn"]
+[ext_resource type="PackedScene" uid="uid://cemr0akiq2a4c" path="res://quest navigation/Objective.tscn" id="13_oxyv7"]
+[ext_resource type="AudioStream" uid="uid://b7j4la5etwsgn" path="res://asset/Light Ambient 1 (Loop).mp3" id="14_0suwa"]
+[ext_resource type="Texture2D" uid="uid://c476ak5mj5oy5" path="res://asset/interact-text.png" id="15_7v7of"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tx0wd"]
 texture = ExtResource("1_2f4ij")
@@ -1529,6 +1532,9 @@ fill_from = Vector2(0.5, 0.5)
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_6xm5p"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_3rb83"]
+radius = 20.0
+
 [node name="map_lv_3" type="Node2D"]
 y_sort_enabled = true
 script = ExtResource("1_i4xxa")
@@ -1575,7 +1581,7 @@ tile_set = SubResource("TileSet_hair3")
 [node name="TimeSystem" type="Node" parent="."]
 script = ExtResource("4_fke80")
 date_time = SubResource("Resource_3x0ee")
-ticks_pr_second = 2000
+ticks_pr_second = 100
 
 [node name="End_Game_Collision" type="Area2D" parent="." groups=["player"]]
 position = Vector2(2412, 299)
@@ -1588,7 +1594,6 @@ shape = SubResource("RectangleShape2D_3ssdq")
 [node name="Player" parent="." instance=ExtResource("3_jrstr")]
 y_sort_enabled = true
 position = Vector2(239, 381)
-speed = 100
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-4, 7)
@@ -1638,7 +1643,7 @@ offset_left = 10.0
 offset_top = 17.0
 offset_right = 522.0
 offset_bottom = 75.0
-theme_override_fonts/font = ExtResource("10_j1eh7")
+theme_override_fonts/font = ExtResource("11_g5wfn")
 theme_override_font_sizes/font_size = 48
 text = "GAME OVER"
 horizontal_alignment = 1
@@ -1649,7 +1654,7 @@ offset_left = 122.0
 offset_top = 111.0
 offset_right = 403.0
 offset_bottom = 134.0
-theme_override_fonts/font = ExtResource("10_j1eh7")
+theme_override_fonts/font = ExtResource("11_g5wfn")
 text = "Budiono Terjebak di Hutan Selamanya"
 
 [node name="Quit" type="Button" parent="GameOver/GameOver"]
@@ -1660,7 +1665,7 @@ offset_top = 166.0
 offset_right = 310.0
 offset_bottom = 203.0
 theme_override_colors/font_hover_color = Color(0.976471, 0, 0, 1)
-theme_override_fonts/font = ExtResource("10_j1eh7")
+theme_override_fonts/font = ExtResource("11_g5wfn")
 theme_override_font_sizes/font_size = 24
 text = "Quit
 "
@@ -1678,6 +1683,27 @@ offset_right = -27.0
 offset_bottom = 73.0
 grow_horizontal = 0
 
+[node name="Objective" parent="." instance=ExtResource("13_oxyv7")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_0suwa")
+autoplay = true
+
+[node name="PapanDesa" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PapanDesa"]
+position = Vector2(2488, 776)
+shape = SubResource("CircleShape2D_3rb83")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="PapanDesa"]
+offset_left = 2471.0
+offset_top = 759.0
+offset_right = 2505.0
+offset_bottom = 769.0
+texture = ExtResource("15_7v7of")
+
 [connection signal="updated" from="TimeSystem" to="TimeBar/Time_GUI" method="_on_time_system_updated"]
 [connection signal="body_entered" from="End_Game_Collision" to="End_Game_Collision" method="_on_body_entered"]
 [connection signal="pressed" from="GameOver/GameOver/Quit" to="GameOver/GameOver" method="_on_quit_pressed"]
+[connection signal="body_entered" from="PapanDesa" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="PapanDesa" to="." method="_on_area_2d_body_exited"]
