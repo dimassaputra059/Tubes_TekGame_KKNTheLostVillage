@@ -8,25 +8,10 @@
 [ext_resource type="Script" path="res://time/time_system.gd" id="4_fke80"]
 [ext_resource type="Texture2D" uid="uid://dufoh1tco8i42" path="res://Map/Tileset/TilesetElement.png" id="5_6wk60"]
 [ext_resource type="Script" path="res://time/date_time.gd" id="5_uhu8f"]
-<<<<<<< Updated upstream
-[ext_resource type="PackedScene" path="res://time_ui.tscn" id="6_nu6m0"]
-
-[sub_resource type="Gradient" id="Gradient_jwu8k"]
-offsets = PackedFloat32Array(0, 0.655844, 1)
-colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_tnwy5"]
-gradient = SubResource("Gradient_jwu8k")
-width = 300
-height = 300
-fill = 1
-fill_from = Vector2(0.5, 0.5)
-=======
 [ext_resource type="PackedScene" uid="uid://21ueyui1gamg" path="res://time_ui.tscn" id="6_nu6m0"]
 [ext_resource type="Script" path="res://end_game_collision.gd" id="8_k2ksa"]
 [ext_resource type="Script" path="res://game_over.gd" id="8_ojcx1"]
 [ext_resource type="FontFile" uid="uid://cpmc0tyjk6x3u" path="res://Map/Tileset/Lacquer-Regular.ttf" id="10_j1eh7"]
->>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tx0wd"]
 texture = ExtResource("1_2f4ij")
