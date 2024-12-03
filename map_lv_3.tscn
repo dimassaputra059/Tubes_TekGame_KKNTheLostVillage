@@ -4183,9 +4183,8 @@ y_sort_enabled = true
 script = ExtResource("1_i4xxa")
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
-visible = false
 self_modulate = Color(1, 1, 1, 0.996078)
-color = Color(0.0980392, 0.0862745, 0.603922, 1)
+color = Color(0.117647, 0.105882, 0.439216, 1)
 blend_mode = 2
 height = 1.0
 
@@ -4238,7 +4237,7 @@ shape = SubResource("RectangleShape2D_3ssdq")
 [node name="Player" parent="." instance=ExtResource("3_jrstr")]
 y_sort_enabled = true
 position = Vector2(239, 381)
-speed = 60
+speed = 80
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-4, 7)
@@ -4250,7 +4249,7 @@ limit_bottom = 1310
 
 [node name="PointLight2D" type="PointLight2D" parent="Player"]
 position = Vector2(1, 5)
-scale = Vector2(0.65, 0.65)
+scale = Vector2(0.55, 0.55)
 texture = SubResource("GradientTexture2D_tnwy5")
 
 [node name="TimeBar" type="CanvasLayer" parent="."]
@@ -4285,9 +4284,25 @@ texture = ExtResource("15_7v7of")
 
 [node name="ParallaxBackground" parent="CanvasLayer" instance=ExtResource("16_k5fey")]
 
-[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+[node name="Hantu10" parent="." instance=ExtResource("9_1k2kv")]
+position = Vector2(1139, 1087)
+scale = Vector2(0.75, 0.75)
 
-[node name="pause" parent="CanvasLayer2" instance=ExtResource("17_vdoi0")]
+[node name="Hantu9" parent="." instance=ExtResource("9_1k2kv")]
+position = Vector2(2269, 633)
+scale = Vector2(0.75, 0.75)
+
+[node name="Hantu8" parent="." instance=ExtResource("9_1k2kv")]
+position = Vector2(372, 209)
+scale = Vector2(0.75, 0.75)
+
+[node name="Hantu7" parent="." instance=ExtResource("9_1k2kv")]
+position = Vector2(1842, 746)
+scale = Vector2(0.75, 0.75)
+
+[node name="Hantu6" parent="." instance=ExtResource("9_1k2kv")]
+position = Vector2(787, 818)
+scale = Vector2(0.75, 0.75)
 
 [node name="Hantu5" parent="." instance=ExtResource("9_1k2kv")]
 position = Vector2(165, 1081)
@@ -4308,6 +4323,10 @@ scale = Vector2(0.75, 0.75)
 [node name="Hantu" parent="." instance=ExtResource("9_1k2kv")]
 position = Vector2(708, 430)
 scale = Vector2(0.75, 0.75)
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="pause" parent="CanvasLayer2" instance=ExtResource("17_vdoi0")]
 
 [node name="GameOver" type="CanvasLayer" parent="."]
 process_mode = 3

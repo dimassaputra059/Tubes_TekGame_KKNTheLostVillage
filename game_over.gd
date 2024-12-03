@@ -9,7 +9,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
 # Fungsi untuk menampilkan layar Game Over
 func game_over():
 	print("Game Over triggered!")  # Debugging untuk memastikan game over dipanggil

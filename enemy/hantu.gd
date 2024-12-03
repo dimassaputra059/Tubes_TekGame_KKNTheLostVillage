@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const INITIAL_SPEED = 65
-const MIN_SPEED = 45
+const INITIAL_SPEED = 85
+const MIN_SPEED = 65
 var current_state = IDLE
 
 var dir = Vector2.RIGHT

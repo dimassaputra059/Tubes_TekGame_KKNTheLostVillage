@@ -17,8 +17,8 @@
 [ext_resource type="PackedScene" uid="uid://cemr0akiq2a4c" path="res://quest navigation/Objective.tscn" id="13_r73y4"]
 [ext_resource type="PackedScene" uid="uid://cv3psll77e6bu" path="res://pausemenu.tscn" id="14_eme6b"]
 [ext_resource type="AudioStream" uid="uid://bswb6ebj40fpc" path="res://asset/Night Ambient 5 (Loop).mp3" id="16_46m6r"]
-[ext_resource type="PackedScene" path="res://interact/jamur_interact.tscn" id="17_ctd0n"]
-[ext_resource type="PackedScene" path="res://interact/danau_interact.tscn" id="18_dciqo"]
+[ext_resource type="PackedScene" uid="uid://dovguvnqtu0cx" path="res://interact/jamur_interact.tscn" id="17_ctd0n"]
+[ext_resource type="PackedScene" uid="uid://bcm6jnnnhwnnl" path="res://interact/danau_interact.tscn" id="18_dciqo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j28lo"]
 texture = ExtResource("1_owlg1")

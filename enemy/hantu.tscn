@@ -181,6 +181,7 @@ frame_progress = 0.985307
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-5, 10)
+scale = Vector2(1.5, 1.5)
 shape = SubResource("CircleShape2D_golqw")
 disabled = true
 
