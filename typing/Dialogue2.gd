@@ -1,5 +1,5 @@
 extends Node2D
-
+@onready var transition = $Transition
 var messages = [
 	"Budiono, segera pergi ke hutan Timur",
 	"Dia harus segera menemukan jalan utama Desa Alur Jambu",
@@ -26,8 +26,9 @@ func start_dialogue():
 	$next_char.start()
 
 func stop_dialogue():
+	transition.play("fade_out")
 	
-	# Ganti ke scene tujuan
+func _on_transition_animation_finished(anim_name: StringName) -> void:
 	get_tree().change_scene_to_file("res://map_lv_3.tscn")
 	
 func _on_next_char_timeout():
