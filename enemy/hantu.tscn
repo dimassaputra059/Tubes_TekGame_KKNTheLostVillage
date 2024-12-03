@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://b7ddhsti6f48x"]
+[gd_scene load_steps=28 format=3 uid="uid://c04xelo5amco4"]
 
 [ext_resource type="Script" path="res://enemy/hantu.gd" id="1_wjsds"]
 [ext_resource type="Texture2D" uid="uid://b3dvfkfggsawi" path="res://enemy/Yurei/Attack_1.png" id="2_uxi7m"]

@@ -39,6 +39,7 @@ directories/dtl_directory={
 "gentong": "res://dialogic/timelines/gentong.dtl",
 "gerobak": "res://gerobak.dtl",
 "jamur": "res://jamur.dtl",
+"jejak_kaki": "res://dialogic/timelines/jejak_kaki.dtl",
 "masuk_ke_mapLvl3": "res://dialogic/timelines/masuk_ke_mapLvl3.dtl",
 "npc1_questComplete": "res://dialogic/timelines/npc1_questComplete.dtl",
 "npc1_questEnd": "res://dialogic/timelines/npc1_questEnd.dtl",

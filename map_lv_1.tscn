@@ -5441,6 +5441,7 @@ tile_set = SubResource("TileSet_33ikq")
 
 [node name="Player" parent="." instance=ExtResource("2_rjjot")]
 position = Vector2(226, 231)
+speed = 80
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(226, 239)

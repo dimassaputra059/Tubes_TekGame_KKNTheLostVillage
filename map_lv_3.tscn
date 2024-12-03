@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=4 uid="uid://bdndpbbnhd8ou"]
+[gd_scene load_steps=47 format=4 uid="uid://bdndpbbnhd8ou"]
 
 [ext_resource type="Texture2D" uid="uid://bvfo7qifry3fs" path="res://Map/Tileset/Decorations.png" id="1_2f4ij"]
 [ext_resource type="Script" path="res://map_lv_3.gd" id="1_i4xxa"]
@@ -14,12 +14,13 @@
 [ext_resource type="Texture2D" uid="uid://b7rbj8b484ya5" path="res://Map/Tileset/TilesetVillageAbandoned.png" id="7_hqx8l"]
 [ext_resource type="Script" path="res://end_game_collision.gd" id="8_k2ksa"]
 [ext_resource type="Script" path="res://game_over.gd" id="8_ojcx1"]
-[ext_resource type="PackedScene" uid="uid://b7ddhsti6f48x" path="res://enemy/hantu.tscn" id="9_1k2kv"]
+[ext_resource type="PackedScene" uid="uid://c04xelo5amco4" path="res://enemy/hantu.tscn" id="9_1k2kv"]
 [ext_resource type="FontFile" uid="uid://c6kv74qc33mgu" path="res://asset/Lacquer-Regular.ttf" id="11_g5wfn"]
 [ext_resource type="PackedScene" uid="uid://cemr0akiq2a4c" path="res://quest navigation/Objective.tscn" id="13_oxyv7"]
 [ext_resource type="Texture2D" uid="uid://c476ak5mj5oy5" path="res://asset/interact-text.png" id="15_7v7of"]
 [ext_resource type="PackedScene" uid="uid://hiveg5p1n3md" path="res://parallax_background.tscn" id="16_k5fey"]
 [ext_resource type="PackedScene" uid="uid://cv3psll77e6bu" path="res://pausemenu.tscn" id="17_vdoi0"]
+[ext_resource type="PackedScene" uid="uid://dvy1cqkdbmm8e" path="res://interact/jejak_kaki.tscn" id="21_ig0vi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tx0wd"]
 texture = ExtResource("1_2f4ij")
@@ -4389,6 +4390,12 @@ theme_override_fonts/font = ExtResource("11_g5wfn")
 theme_override_font_sizes/font_size = 24
 text = "Quit
 "
+
+[node name="JejakKaki" parent="." instance=ExtResource("21_ig0vi")]
+position = Vector2(560, 166)
+
+[node name="JejakKaki2" parent="." instance=ExtResource("21_ig0vi")]
+position = Vector2(1190, 900)
 
 [connection signal="updated" from="TimeSystem" to="TimeBar/Time_GUI" method="_on_time_system_updated"]
 [connection signal="body_entered" from="End_Game_Collision" to="End_Game_Collision" method="_on_body_entered"]
